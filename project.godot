@@ -1,0 +1,26 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GodotUtils - Swiss Army Knife Utilities"
+config/description="A collection of plug-and-play utilities for Godot development"
+config/version="1.0.0"
+config/tags=PackedStringArray("utilities", "tools", "helpers")
+run/main_scene="res://examples/demo_scene.tscn"
+
+[autoload]
+
+GodotUtils="*res://godot_utils.gd"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
